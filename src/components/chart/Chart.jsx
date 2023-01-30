@@ -1,8 +1,8 @@
 import React from "react";
-import Chartbar from "../chartBar/ChartBar";
+import ChartBar from "../ChartBar/ChartBar"
 import styled from "styled-components";
 
-const ChartBar = styled.div`
+const CharttBar = styled.div`
   padding: 1rem;
   border-radius: 12px;
   background-color: #f8dfff;
@@ -71,11 +71,11 @@ const Chart = ({ items }) => {
   });
   console.log(months);
   return (
-    <ChartBar>
+    <CharttBar>
       {months.map((el) => {
         console.log(el);
         return (
-          <Chartbar
+          <ChartBar
             key={el.label}
             label={el.label}
             maximumPrice={maximumPrice}
@@ -83,7 +83,7 @@ const Chart = ({ items }) => {
           />
         );
       })}
-    </ChartBar>
+    </CharttBar>
   );
 };
 

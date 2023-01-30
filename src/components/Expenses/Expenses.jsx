@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ExpenseItem from "../expenseItem/ExpenseItem";
+import ExpenseItem from '../ExpenseItem/ExpenseItem'
 import ExpensesFilter from "../ExpensesFilter/ExpensesFilter";
-import Chart from "../chart/Chart";
+import Chart from '../Chart/Chart'
 import styled from "styled-components";
 
 const Ul = styled.ul`
